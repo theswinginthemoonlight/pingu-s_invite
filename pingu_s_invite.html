@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day Invitation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #yesButton {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+    }
+    #noButton {
+        background-color: #f44336; /* Red */
+        border: none;
+        color: white;
+    }
+    #gifContainer {
+        display: none; /* Initially hide the GIF */
+    }
+</style>
+</head>
+<body>
+<h1>Will You Be My Partner-In-Crime this Valentine's?</h1>
+<button id="yesButton" onclick="showGif()">Yes</button>
+<button id="noButton" onclick="buttonResize()">No</button>
+<div id="gifContainer">
+    <img id="valentineGif" src="https://media1.tenor.com/m/gor2UjZoXe4AAAAd/love-kiss.gif" alt="Valentine's Day GIF">
+</div>
+<script>
+    function showGif() {
+        document.getElementById("gifContainer").style.display = "block";
+        var yesButton = document.getElementById("yesButton");
+        yesButton.style.fontSize = "30px";
+    }
+
+    function buttonResize() {
+        var noButton = document.getElementById("noButton");
+        noButton.style.fontSize = "15px";
+    }
+</script>
+</body>
+</html>
